@@ -1,0 +1,80 @@
+
+PS C:\Users\MAHESH\Desktop\python-practice> git config --global user.name 'battumahesh2013'
+PS C:\Users\MAHESH\Desktop\python-practice> git config --global user.email "battumahesh2013@gmail.com"
+PS C:\Users\MAHESH\Desktop\python-practice> git config --global push.default simple
+PS C:\Users\MAHESH\Desktop\python-practice> git config --global -l
+user.name=battumahesh2013
+user.email=battumahesh2013@gmail.com
+PS C:\Users\MAHESH\Desktop\python-practice>
+PS C:\Users\MAHESH\Desktop\python-practice> cat C:\Users\MAHESH\.gitconfig
+[user]
+        name = battumahesh2013
+        email = battumahesh2013@gmail.com
+[push]
+        default = simple
+PS C:\Users\MAHESH\Desktop\python-practice>
+PS C:\Users\MAHESH\Desktop\python-practice> echo "# Python-Proect" >> README.md
+PS C:\Users\MAHESH\Desktop\python-practice> git init
+Initialized empty Git repository in C:/Users/MAHESH/Desktop/python-practice/.git/
+PS C:\Users\MAHESH\Desktop\python-practice> git add README.md
+PS C:\Users\MAHESH\Desktop\python-practice> git add .        
+PS C:\Users\MAHESH\Desktop\python-practice> git status
+On branch master
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Creating repo.pdf
+        new file:   README.md
+        new file:   create repo.docx
+        new file:   prog 1 of basics.py
+        new file:   prog 2 in basics but inproved.py
+        new file:   prog 2 of basics.py
+PS C:\Users\MAHESH\Desktop\python-practice> git add --all
+PS C:\Users\MAHESH\Desktop\python-practice> git commit -m "first python-project"
+[master (root-commit) 7e0fa96] first python-project
+ 6 files changed, 8 insertions(+)
+ create mode 100644 Creating repo.pdf
+ create mode 100644 README.md
+ create mode 100644 create repo.docx
+ create mode 100644 prog 1 of basics.py
+ create mode 100644 prog 2 in basics but inproved.py
+ create mode 100644 prog 2 of basics.py
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+battumahesh2013/Python-Proect.git
+PS C:\Users\MAHESH\Desktop\python-practice> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream python-project master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Delta compression using up to 8 threads
+Writing objects: 100% (8/8), 142.48 KiB | 17.81 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/battumahesh2013/Python-Proect.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'python-project/master'.
+
+PS C:\Users\MAHESH\Desktop\python-practice> git push --set-upstream python-project master
+branch 'master' set up to track 'python-project/master'.
+Everything up-to-date
+
+PS C:\Users\MAHESH\Desktop\python-practice> git push
+Everything up-to-date
+PS C:\Users\MAHESH\Desktop\python-practice> cat C:\Users\MAHESH\.gitconfig
+[user]
+        name = battumahesh2013
+        email = battumahesh2013@gmail.com
+[push]
+        default = simple
+PS C:\Users\MAHESH\Desktop\python-practice>
